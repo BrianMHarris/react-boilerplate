@@ -7,7 +7,16 @@ module.exports = {
     filename: "bundle.js",
   },
   resolve: {
+    preferAbsolute: true,
+    alias: {
+      _: [
+        path.resolve(__dirname, 'src/'),
+      ],
+    },
     extensions: [".js", ".jsx", ".json", ".ts", ".tsx"],
+    root: [
+      path.resolve('src'),
+    ]
   },
   module: {
     rules: [
