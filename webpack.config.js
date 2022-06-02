@@ -15,7 +15,7 @@ module.exports = {
     },
     extensions: [".js", ".jsx", ".json", ".ts", ".tsx"],
     root: [
-      path.resolve('src'),
+      path.resolve('./src'),
     ]
   },
   module: {
